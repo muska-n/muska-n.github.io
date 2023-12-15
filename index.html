@@ -18,21 +18,31 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <h1 class="text-white bg-danger"> Hi my name is Muskan </h1>
+<div class="tabs">
+  <div role="tablist">
+    <button id="tab-2" aria-controls="tab-panel-2" role="tab" type="button"  tabindex="-1" >My A-levels</button>
+        <button id="tab-1" aria-controls="tab-panel-1" role="tab" type="button"  tabindex="0" >Home</button>
+     </div>
+  
+ <div id="tab-panel-2" aria-labelledby="tab-2" role="tabpanel" tabindex="-1">
+     <h3<strong><em><u> My A-level subjects: </u></em></strong></h3>
+     <li>Maths</li><li>FM</li><li>CompSci</li><li>German</li>
+  </div>
+ <div
+    id="tab-panel-1" aria-labelledby="tab-1" role="tabpanel" tabindex="0" hidden>
+    <h1 class="text-white bg-danger"> Hi my name is Muskan </h1>
 <h2 class="text-success"> I am in YR12 </h2>
 <a href = "https://www.manchesterhigh.co.uk/"> I attend this sixth form</a>
 <div>
 <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"class ="rounded-circle"alt="I like this cat" />
-  <p> I like to skateboard, play the drums, and listen to music.</p>
-  <h3 class ="nav-item"><strong><em><u> My A-level subjects: </u></em></strong></h3>
-  <li>Maths</li><li>FM</li><li>CompSci</li><li>German</li>
-<form id = "form">
+ <p> I like to skateboard, play the drums, and listen to music.</p>
+  
+  <form id = "form">
   <label for="fname">what is your favourite colour?</label>
   <input type="text" id="col" name="col"><br><br>
   <button id="submit">Submit</button>
 </form>
-
-
+  </div>
 <!-- end of content -->
 
 <script src="js/index.js"></script>
